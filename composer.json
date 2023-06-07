@@ -1,0 +1,35 @@
+{
+    "description": "Mediana sms api doc </br>  sdks for some programming languages is in out github at https://github.com/ippanelippanel </br> api-key format: <code>Authorization: \"AccessKey your-api-key\"</code>  # Authentication  <!-- ReDoc-Inject: <security-definitions> -->",
+    "keywords": [
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://mediana.ir",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://mediana.ir"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "Mediana\\Sdk\\" : "src/Mediana/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Mediana\\Sdk\\Test\\" : "test/" }
+    }
+}
