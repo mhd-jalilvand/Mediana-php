@@ -137,32 +137,32 @@ class MessagesApi
     /**
      * Operation createPattern
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToCreate $pattern_to_create parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPattern'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \Mediana\Sdk\Model\InlineResponse2003|\Mediana\Sdk\Model\InlineResponse401
      */
-    public function createPattern($unknown_base_type, string $contentType = self::contentTypes['createPattern'][0])
+    public function createPattern($pattern_to_create, string $contentType = self::contentTypes['createPattern'][0])
     {
-        list($response) = $this->createPatternWithHttpInfo($unknown_base_type, $contentType);
+        list($response) = $this->createPatternWithHttpInfo($pattern_to_create, $contentType);
         return $response;
     }
 
     /**
      * Operation createPatternWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToCreate $pattern_to_create parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPattern'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \Mediana\Sdk\Model\InlineResponse2003|\Mediana\Sdk\Model\InlineResponse401, HTTP status code, HTTP response headers (array of strings)
      */
-    public function createPatternWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['createPattern'][0])
+    public function createPatternWithHttpInfo($pattern_to_create, string $contentType = self::contentTypes['createPattern'][0])
     {
-        $request = $this->createPatternRequest($unknown_base_type, $contentType);
+        $request = $this->createPatternRequest($pattern_to_create, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -274,15 +274,15 @@ class MessagesApi
     /**
      * Operation createPatternAsync
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToCreate $pattern_to_create parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createPatternAsync($unknown_base_type, string $contentType = self::contentTypes['createPattern'][0])
+    public function createPatternAsync($pattern_to_create, string $contentType = self::contentTypes['createPattern'][0])
     {
-        return $this->createPatternAsyncWithHttpInfo($unknown_base_type, $contentType)
+        return $this->createPatternAsyncWithHttpInfo($pattern_to_create, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -293,16 +293,16 @@ class MessagesApi
     /**
      * Operation createPatternAsyncWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToCreate $pattern_to_create parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createPatternAsyncWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['createPattern'][0])
+    public function createPatternAsyncWithHttpInfo($pattern_to_create, string $contentType = self::contentTypes['createPattern'][0])
     {
         $returnType = '\Mediana\Sdk\Model\InlineResponse2003';
-        $request = $this->createPatternRequest($unknown_base_type, $contentType);
+        $request = $this->createPatternRequest($pattern_to_create, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -343,19 +343,19 @@ class MessagesApi
     /**
      * Create request for operation 'createPattern'
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToCreate $pattern_to_create parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function createPatternRequest($unknown_base_type, string $contentType = self::contentTypes['createPattern'][0])
+    public function createPatternRequest($pattern_to_create, string $contentType = self::contentTypes['createPattern'][0])
     {
 
-        // verify the required parameter 'unknown_base_type' is set
-        if ($unknown_base_type === null || (is_array($unknown_base_type) && count($unknown_base_type) === 0)) {
+        // verify the required parameter 'pattern_to_create' is set
+        if ($pattern_to_create === null || (is_array($pattern_to_create) && count($pattern_to_create) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $unknown_base_type when calling createPattern'
+                'Missing the required parameter $pattern_to_create when calling createPattern'
             );
         }
 
@@ -378,12 +378,12 @@ class MessagesApi
         );
 
         // for model (json/xml)
-        if (isset($unknown_base_type)) {
+        if (isset($pattern_to_create)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($unknown_base_type));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($pattern_to_create));
             } else {
-                $httpBody = $unknown_base_type;
+                $httpBody = $pattern_to_create;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
@@ -1388,32 +1388,32 @@ class MessagesApi
     /**
      * Operation sendPattern
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToSend $pattern_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendPattern'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \Mediana\Sdk\Model\InlineResponse2002|\Mediana\Sdk\Model\InlineResponse401
      */
-    public function sendPattern($unknown_base_type, string $contentType = self::contentTypes['sendPattern'][0])
+    public function sendPattern($pattern_to_send, string $contentType = self::contentTypes['sendPattern'][0])
     {
-        list($response) = $this->sendPatternWithHttpInfo($unknown_base_type, $contentType);
+        list($response) = $this->sendPatternWithHttpInfo($pattern_to_send, $contentType);
         return $response;
     }
 
     /**
      * Operation sendPatternWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToSend $pattern_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendPattern'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \Mediana\Sdk\Model\InlineResponse2002|\Mediana\Sdk\Model\InlineResponse401, HTTP status code, HTTP response headers (array of strings)
      */
-    public function sendPatternWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['sendPattern'][0])
+    public function sendPatternWithHttpInfo($pattern_to_send, string $contentType = self::contentTypes['sendPattern'][0])
     {
-        $request = $this->sendPatternRequest($unknown_base_type, $contentType);
+        $request = $this->sendPatternRequest($pattern_to_send, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1525,15 +1525,15 @@ class MessagesApi
     /**
      * Operation sendPatternAsync
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToSend $pattern_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sendPatternAsync($unknown_base_type, string $contentType = self::contentTypes['sendPattern'][0])
+    public function sendPatternAsync($pattern_to_send, string $contentType = self::contentTypes['sendPattern'][0])
     {
-        return $this->sendPatternAsyncWithHttpInfo($unknown_base_type, $contentType)
+        return $this->sendPatternAsyncWithHttpInfo($pattern_to_send, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1544,16 +1544,16 @@ class MessagesApi
     /**
      * Operation sendPatternAsyncWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToSend $pattern_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sendPatternAsyncWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['sendPattern'][0])
+    public function sendPatternAsyncWithHttpInfo($pattern_to_send, string $contentType = self::contentTypes['sendPattern'][0])
     {
         $returnType = '\Mediana\Sdk\Model\InlineResponse2002';
-        $request = $this->sendPatternRequest($unknown_base_type, $contentType);
+        $request = $this->sendPatternRequest($pattern_to_send, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1594,19 +1594,19 @@ class MessagesApi
     /**
      * Create request for operation 'sendPattern'
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\PatternToSend $pattern_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendPattern'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function sendPatternRequest($unknown_base_type, string $contentType = self::contentTypes['sendPattern'][0])
+    public function sendPatternRequest($pattern_to_send, string $contentType = self::contentTypes['sendPattern'][0])
     {
 
-        // verify the required parameter 'unknown_base_type' is set
-        if ($unknown_base_type === null || (is_array($unknown_base_type) && count($unknown_base_type) === 0)) {
+        // verify the required parameter 'pattern_to_send' is set
+        if ($pattern_to_send === null || (is_array($pattern_to_send) && count($pattern_to_send) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $unknown_base_type when calling sendPattern'
+                'Missing the required parameter $pattern_to_send when calling sendPattern'
             );
         }
 
@@ -1629,12 +1629,12 @@ class MessagesApi
         );
 
         // for model (json/xml)
-        if (isset($unknown_base_type)) {
+        if (isset($pattern_to_send)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($unknown_base_type));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($pattern_to_send));
             } else {
-                $httpBody = $unknown_base_type;
+                $httpBody = $pattern_to_send;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
@@ -1690,32 +1690,32 @@ class MessagesApi
     /**
      * Operation sendSMS
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\MessageToSend $message_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendSMS'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \Mediana\Sdk\Model\InlineResponse2002|\Mediana\Sdk\Model\InlineResponse401
      */
-    public function sendSMS($unknown_base_type, string $contentType = self::contentTypes['sendSMS'][0])
+    public function sendSMS($message_to_send, string $contentType = self::contentTypes['sendSMS'][0])
     {
-        list($response) = $this->sendSMSWithHttpInfo($unknown_base_type, $contentType);
+        list($response) = $this->sendSMSWithHttpInfo($message_to_send, $contentType);
         return $response;
     }
 
     /**
      * Operation sendSMSWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\MessageToSend $message_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendSMS'] to see the possible values for this operation
      *
      * @throws \Mediana\Sdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \Mediana\Sdk\Model\InlineResponse2002|\Mediana\Sdk\Model\InlineResponse401, HTTP status code, HTTP response headers (array of strings)
      */
-    public function sendSMSWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['sendSMS'][0])
+    public function sendSMSWithHttpInfo($message_to_send, string $contentType = self::contentTypes['sendSMS'][0])
     {
-        $request = $this->sendSMSRequest($unknown_base_type, $contentType);
+        $request = $this->sendSMSRequest($message_to_send, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1827,15 +1827,15 @@ class MessagesApi
     /**
      * Operation sendSMSAsync
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\MessageToSend $message_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendSMS'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sendSMSAsync($unknown_base_type, string $contentType = self::contentTypes['sendSMS'][0])
+    public function sendSMSAsync($message_to_send, string $contentType = self::contentTypes['sendSMS'][0])
     {
-        return $this->sendSMSAsyncWithHttpInfo($unknown_base_type, $contentType)
+        return $this->sendSMSAsyncWithHttpInfo($message_to_send, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1846,16 +1846,16 @@ class MessagesApi
     /**
      * Operation sendSMSAsyncWithHttpInfo
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\MessageToSend $message_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendSMS'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sendSMSAsyncWithHttpInfo($unknown_base_type, string $contentType = self::contentTypes['sendSMS'][0])
+    public function sendSMSAsyncWithHttpInfo($message_to_send, string $contentType = self::contentTypes['sendSMS'][0])
     {
         $returnType = '\Mediana\Sdk\Model\InlineResponse2002';
-        $request = $this->sendSMSRequest($unknown_base_type, $contentType);
+        $request = $this->sendSMSRequest($message_to_send, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1896,19 +1896,19 @@ class MessagesApi
     /**
      * Create request for operation 'sendSMS'
      *
-     * @param  \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE $unknown_base_type parameters (required)
+     * @param  \Mediana\Sdk\Model\MessageToSend $message_to_send parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['sendSMS'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function sendSMSRequest($unknown_base_type, string $contentType = self::contentTypes['sendSMS'][0])
+    public function sendSMSRequest($message_to_send, string $contentType = self::contentTypes['sendSMS'][0])
     {
 
-        // verify the required parameter 'unknown_base_type' is set
-        if ($unknown_base_type === null || (is_array($unknown_base_type) && count($unknown_base_type) === 0)) {
+        // verify the required parameter 'message_to_send' is set
+        if ($message_to_send === null || (is_array($message_to_send) && count($message_to_send) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $unknown_base_type when calling sendSMS'
+                'Missing the required parameter $message_to_send when calling sendSMS'
             );
         }
 
@@ -1931,12 +1931,12 @@ class MessagesApi
         );
 
         // for model (json/xml)
-        if (isset($unknown_base_type)) {
+        if (isset($message_to_send)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($unknown_base_type));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($message_to_send));
             } else {
-                $httpBody = $unknown_base_type;
+                $httpBody = $message_to_send;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

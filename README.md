@@ -102,8 +102,11 @@ Class | Method | HTTP request | Description
 - [InlineResponse2006](docs/Model/InlineResponse2006.md)
 - [InlineResponse401](docs/Model/InlineResponse401.md)
 - [Message](docs/Model/Message.md)
+- [MessageToSend](docs/Model/MessageToSend.md)
 - [Meta](docs/Model/Meta.md)
 - [Pattern](docs/Model/Pattern.md)
+- [PatternToCreate](docs/Model/PatternToCreate.md)
+- [PatternToSend](docs/Model/PatternToSend.md)
 - [Recipient](docs/Model/Recipient.md)
 - [User](docs/Model/User.md)
 

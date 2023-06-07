@@ -15,7 +15,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `createPattern()`
 
 ```php
-createPattern($unknown_base_type): \Mediana\Sdk\Model\InlineResponse2003
+createPattern($pattern_to_create): \Mediana\Sdk\Model\InlineResponse2003
 ```
 
 
@@ -41,10 +41,10 @@ $apiInstance = new Mediana\Sdk\Api\MessagesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$unknown_base_type = new \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE(); // \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE | parameters
+$pattern_to_create = new \Mediana\Sdk\Model\PatternToCreate(); // \Mediana\Sdk\Model\PatternToCreate | parameters
 
 try {
-    $result = $apiInstance->createPattern($unknown_base_type);
+    $result = $apiInstance->createPattern($pattern_to_create);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MessagesApi->createPattern: ', $e->getMessage(), PHP_EOL;
@@ -55,7 +55,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **unknown_base_type** | [**\Mediana\Sdk\Model\UNKNOWN_BASE_TYPE**](../Model/UNKNOWN_BASE_TYPE.md)| parameters | |
+| **pattern_to_create** | [**\Mediana\Sdk\Model\PatternToCreate**](../Model/PatternToCreate.md)| parameters | |
 
 ### Return type
 
@@ -269,7 +269,7 @@ try {
 ## `sendPattern()`
 
 ```php
-sendPattern($unknown_base_type): \Mediana\Sdk\Model\InlineResponse2002
+sendPattern($pattern_to_send): \Mediana\Sdk\Model\InlineResponse2002
 ```
 
 
@@ -295,10 +295,10 @@ $apiInstance = new Mediana\Sdk\Api\MessagesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$unknown_base_type = new \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE(); // \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE | parameters
+$pattern_to_send = new \Mediana\Sdk\Model\PatternToSend(); // \Mediana\Sdk\Model\PatternToSend | parameters
 
 try {
-    $result = $apiInstance->sendPattern($unknown_base_type);
+    $result = $apiInstance->sendPattern($pattern_to_send);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MessagesApi->sendPattern: ', $e->getMessage(), PHP_EOL;
@@ -309,7 +309,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **unknown_base_type** | [**\Mediana\Sdk\Model\UNKNOWN_BASE_TYPE**](../Model/UNKNOWN_BASE_TYPE.md)| parameters | |
+| **pattern_to_send** | [**\Mediana\Sdk\Model\PatternToSend**](../Model/PatternToSend.md)| parameters | |
 
 ### Return type
 
@@ -331,7 +331,7 @@ try {
 ## `sendSMS()`
 
 ```php
-sendSMS($unknown_base_type): \Mediana\Sdk\Model\InlineResponse2002
+sendSMS($message_to_send): \Mediana\Sdk\Model\InlineResponse2002
 ```
 
 
@@ -357,10 +357,10 @@ $apiInstance = new Mediana\Sdk\Api\MessagesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$unknown_base_type = new \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE(); // \Mediana\Sdk\Model\UNKNOWN_BASE_TYPE | parameters
+$message_to_send = new \Mediana\Sdk\Model\MessageToSend(); // \Mediana\Sdk\Model\MessageToSend | parameters
 
 try {
-    $result = $apiInstance->sendSMS($unknown_base_type);
+    $result = $apiInstance->sendSMS($message_to_send);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MessagesApi->sendSMS: ', $e->getMessage(), PHP_EOL;
@@ -371,7 +371,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **unknown_base_type** | [**\Mediana\Sdk\Model\UNKNOWN_BASE_TYPE**](../Model/UNKNOWN_BASE_TYPE.md)| parameters | |
+| **message_to_send** | [**\Mediana\Sdk\Model\MessageToSend**](../Model/MessageToSend.md)| parameters | |
 
 ### Return type
 
