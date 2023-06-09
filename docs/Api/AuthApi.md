@@ -10,7 +10,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `getAuthorizedUser()`
 
 ```php
-getAuthorizedUser(): \Mediana\Sdk\Model\InlineResponse200
+getAuthorizedUser(): \Mediana\Sdk\Model\GetAuthorizedUser200Response
 ```
 
 
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Mediana\Sdk\Model\GetAuthorizedUser200Response**](../Model/GetAuthorizedUser200Response.md)
 
 ### Authorization
 

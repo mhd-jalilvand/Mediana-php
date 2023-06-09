@@ -15,7 +15,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `createPattern()`
 
 ```php
-createPattern($pattern_to_create): \Mediana\Sdk\Model\InlineResponse2003
+createPattern($pattern_to_create): \Mediana\Sdk\Model\CreatePattern200Response
 ```
 
 
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\Mediana\Sdk\Model\CreatePattern200Response**](../Model/CreatePattern200Response.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ try {
 ## `fetchInboxMessages()`
 
 ```php
-fetchInboxMessages($page, $limit): \Mediana\Sdk\Model\InlineResponse2006
+fetchInboxMessages($page, $limit): \Mediana\Sdk\Model\FetchInboxMessages200Response
 ```
 
 
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\Mediana\Sdk\Model\FetchInboxMessages200Response**](../Model/FetchInboxMessages200Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ try {
 ## `getMessageRecipientsStatus()`
 
 ```php
-getMessageRecipientsStatus($bulk_id, $page, $limit): \Mediana\Sdk\Model\InlineResponse2005
+getMessageRecipientsStatus($bulk_id, $page, $limit): \Mediana\Sdk\Model\GetMessageRecipientsStatus200Response
 ```
 
 
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\Mediana\Sdk\Model\GetMessageRecipientsStatus200Response**](../Model/GetMessageRecipientsStatus200Response.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ try {
 ## `getSMS()`
 
 ```php
-getSMS($bulk_id): \Mediana\Sdk\Model\InlineResponse2004
+getSMS($bulk_id): \Mediana\Sdk\Model\GetSMS200Response
 ```
 
 
@@ -251,7 +251,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\Mediana\Sdk\Model\GetSMS200Response**](../Model/GetSMS200Response.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ try {
 ## `sendPattern()`
 
 ```php
-sendPattern($pattern_to_send): \Mediana\Sdk\Model\InlineResponse2002
+sendPattern($pattern_to_send): \Mediana\Sdk\Model\SendSMS200Response
 ```
 
 
@@ -313,7 +313,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\Mediana\Sdk\Model\SendSMS200Response**](../Model/SendSMS200Response.md)
 
 ### Authorization
 
@@ -331,7 +331,7 @@ try {
 ## `sendSMS()`
 
 ```php
-sendSMS($message_to_send): \Mediana\Sdk\Model\InlineResponse2002
+sendSMS($message_to_send): \Mediana\Sdk\Model\SendSMS200Response
 ```
 
 
@@ -375,7 +375,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\Mediana\Sdk\Model\SendSMS200Response**](../Model/SendSMS200Response.md)
 
 ### Authorization
 

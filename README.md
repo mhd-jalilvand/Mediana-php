@@ -92,15 +92,21 @@ Class | Method | HTTP request | Description
 
 ## Models
 
+- [CreatePattern200Response](docs/Model/CreatePattern200Response.md)
+- [CreatePattern200ResponseData](docs/Model/CreatePattern200ResponseData.md)
+- [FetchInboxMessages200Response](docs/Model/FetchInboxMessages200Response.md)
+- [FetchInboxMessages200ResponseData](docs/Model/FetchInboxMessages200ResponseData.md)
+- [GetAuthorizedUser200Response](docs/Model/GetAuthorizedUser200Response.md)
+- [GetAuthorizedUser200ResponseData](docs/Model/GetAuthorizedUser200ResponseData.md)
+- [GetAuthorizedUser401Response](docs/Model/GetAuthorizedUser401Response.md)
+- [GetAuthorizedUser401ResponseData](docs/Model/GetAuthorizedUser401ResponseData.md)
+- [GetCredit200Response](docs/Model/GetCredit200Response.md)
+- [GetCredit200ResponseData](docs/Model/GetCredit200ResponseData.md)
+- [GetMessageRecipientsStatus200Response](docs/Model/GetMessageRecipientsStatus200Response.md)
+- [GetMessageRecipientsStatus200ResponseData](docs/Model/GetMessageRecipientsStatus200ResponseData.md)
+- [GetSMS200Response](docs/Model/GetSMS200Response.md)
+- [GetSMS200ResponseData](docs/Model/GetSMS200ResponseData.md)
 - [InboxMessage](docs/Model/InboxMessage.md)
-- [InlineResponse200](docs/Model/InlineResponse200.md)
-- [InlineResponse2001](docs/Model/InlineResponse2001.md)
-- [InlineResponse2002](docs/Model/InlineResponse2002.md)
-- [InlineResponse2003](docs/Model/InlineResponse2003.md)
-- [InlineResponse2004](docs/Model/InlineResponse2004.md)
-- [InlineResponse2005](docs/Model/InlineResponse2005.md)
-- [InlineResponse2006](docs/Model/InlineResponse2006.md)
-- [InlineResponse401](docs/Model/InlineResponse401.md)
 - [Message](docs/Model/Message.md)
 - [MessageToSend](docs/Model/MessageToSend.md)
 - [Meta](docs/Model/Meta.md)
@@ -108,6 +114,8 @@ Class | Method | HTTP request | Description
 - [PatternToCreate](docs/Model/PatternToCreate.md)
 - [PatternToSend](docs/Model/PatternToSend.md)
 - [Recipient](docs/Model/Recipient.md)
+- [SendSMS200Response](docs/Model/SendSMS200Response.md)
+- [SendSMS200ResponseData](docs/Model/SendSMS200ResponseData.md)
 - [User](docs/Model/User.md)
 
 ## Authorization

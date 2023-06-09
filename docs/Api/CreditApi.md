@@ -10,7 +10,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `getCredit()`
 
 ```php
-getCredit(): \Mediana\Sdk\Model\InlineResponse2001
+getCredit(): \Mediana\Sdk\Model\GetCredit200Response
 ```
 
 
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Mediana\Sdk\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\Mediana\Sdk\Model\GetCredit200Response**](../Model/GetCredit200Response.md)
 
 ### Authorization
 
