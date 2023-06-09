@@ -58,7 +58,7 @@ class GetMessageRecipientsStatus200Response implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'int',
+        'code' => 'string',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\GetMessageRecipientsStatus200ResponseData',
         'meta' => '\Mediana\Sdk\Model\Meta'
@@ -347,7 +347,7 @@ class GetMessageRecipientsStatus200Response implements ModelInterface, ArrayAcce
     /**
      * Gets code
      *
-     * @return int|null
+     * @return string|null
      */
     public function getCode()
     {
@@ -357,7 +357,7 @@ class GetMessageRecipientsStatus200Response implements ModelInterface, ArrayAcce
     /**
      * Sets code
      *
-     * @param int|null $code code
+     * @param string|null $code code
      *
      * @return self
      */

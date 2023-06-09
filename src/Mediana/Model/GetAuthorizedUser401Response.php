@@ -58,7 +58,7 @@ class GetAuthorizedUser401Response implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'int',
+        'code' => 'string',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\GetAuthorizedUser401ResponseData'
     ];
@@ -340,7 +340,7 @@ class GetAuthorizedUser401Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets code
      *
-     * @return int|null
+     * @return string|null
      */
     public function getCode()
     {
@@ -350,7 +350,7 @@ class GetAuthorizedUser401Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets code
      *
-     * @param int|null $code code
+     * @param string|null $code code
      *
      * @return self
      */

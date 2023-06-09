@@ -58,7 +58,7 @@ class FetchInboxMessages200Response implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'int',
+        'code' => 'string',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\FetchInboxMessages200ResponseData',
         'meta' => '\Mediana\Sdk\Model\Meta'
@@ -347,7 +347,7 @@ class FetchInboxMessages200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets code
      *
-     * @return int|null
+     * @return string|null
      */
     public function getCode()
     {
@@ -357,7 +357,7 @@ class FetchInboxMessages200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets code
      *
-     * @param int|null $code code
+     * @param string|null $code code
      *
      * @return self
      */

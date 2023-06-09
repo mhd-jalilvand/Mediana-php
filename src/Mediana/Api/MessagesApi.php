@@ -72,7 +72,7 @@ class MessagesApi
     /** @var string[] $contentTypes **/
     public const contentTypes = [
         'createPattern' => [
-            'application/json',
+            'application/json; charset=UTF-8',
         ],
         'fetchInboxMessages' => [
             'application/json',
@@ -84,10 +84,10 @@ class MessagesApi
             'application/json',
         ],
         'sendPattern' => [
-            'application/json',
+            'application/json; charset=UTF-8',
         ],
         'sendSMS' => [
-            'application/json',
+            'application/json; charset=UTF-8',
         ],
     ];
 
@@ -375,7 +375,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );
@@ -695,7 +695,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );
@@ -1028,7 +1028,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );
@@ -1331,7 +1331,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );
@@ -1626,7 +1626,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );
@@ -1928,7 +1928,7 @@ class MessagesApi
 
 
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json; charset=UTF-8', ],
             $contentType,
             $multipart
         );

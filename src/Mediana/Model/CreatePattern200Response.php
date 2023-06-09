@@ -58,7 +58,7 @@ class CreatePattern200Response implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'int',
+        'code' => 'string',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\CreatePattern200ResponseData'
     ];
@@ -340,7 +340,7 @@ class CreatePattern200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets code
      *
-     * @return int|null
+     * @return string|null
      */
     public function getCode()
     {
@@ -350,7 +350,7 @@ class CreatePattern200Response implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets code
      *
-     * @param int|null $code code
+     * @param string|null $code code
      *
      * @return self
      */
