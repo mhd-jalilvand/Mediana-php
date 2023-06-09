@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **status** | **string** |  | [optional]
-**code** | **string** |  | [optional]
+**code** | **int** |  | [optional]
 **message** | **string** |  | [optional]
 **data** | [**\Mediana\Sdk\Model\SendSMS200ResponseData**](SendSMS200ResponseData.md) |  | [optional]
 

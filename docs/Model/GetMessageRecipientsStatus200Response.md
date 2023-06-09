@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **status** | **string** |  | [optional]
-**code** | **string** |  | [optional]
+**code** | **int** |  | [optional]
 **message** | **string** |  | [optional]
 **data** | [**\Mediana\Sdk\Model\GetMessageRecipientsStatus200ResponseData**](GetMessageRecipientsStatus200ResponseData.md) |  | [optional]
 **meta** | [**\Mediana\Sdk\Model\Meta**](Meta.md) |  | [optional]

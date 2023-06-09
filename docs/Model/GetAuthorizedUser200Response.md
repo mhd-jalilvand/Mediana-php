@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **status** | **string** |  | [optional]
-**code** | **string** |  | [optional]
+**code** | **int** |  | [optional]
 **message** | **string** |  | [optional]
 **data** | [**\Mediana\Sdk\Model\GetAuthorizedUser200ResponseData**](GetAuthorizedUser200ResponseData.md) |  | [optional]
 

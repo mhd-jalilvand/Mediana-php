@@ -58,7 +58,7 @@ class GetCredit200Response implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'string',
+        'code' => 'int',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\GetCredit200ResponseData'
     ];
@@ -340,7 +340,7 @@ class GetCredit200Response implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets code
      *
-     * @return string|null
+     * @return int|null
      */
     public function getCode()
     {
@@ -350,7 +350,7 @@ class GetCredit200Response implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets code
      *
-     * @param string|null $code code
+     * @param int|null $code code
      *
      * @return self
      */

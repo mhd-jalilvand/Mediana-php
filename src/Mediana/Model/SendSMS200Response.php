@@ -58,7 +58,7 @@ class SendSMS200Response implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'code' => 'string',
+        'code' => 'int',
         'message' => 'string',
         'data' => '\Mediana\Sdk\Model\SendSMS200ResponseData'
     ];
@@ -340,7 +340,7 @@ class SendSMS200Response implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets code
      *
-     * @return string|null
+     * @return int|null
      */
     public function getCode()
     {
@@ -350,7 +350,7 @@ class SendSMS200Response implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets code
      *
-     * @param string|null $code code
+     * @param int|null $code code
      *
      * @return self
      */
