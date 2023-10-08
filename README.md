@@ -23,11 +23,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/jalilvand/Mediana-php.git"
+      "url": "https://github.com/mhd-jalilvand/Mediana-php.git"
     }
   ],
   "require": {
-    "jalilvand/Mediana-php": "*@dev"
+    "mhd-jalilvand/Mediana-php": "*@dev"
   }
 }
 ```
