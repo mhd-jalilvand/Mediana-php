@@ -10,7 +10,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `getAuthorizedUser()`
 
 ```php
-getAuthorizedUser(): \Mediana\Sdk\Model\GetAuthorizedUser200Response
+getAuthorizedUser(): \Mediana\Sdk\Model\UserResponse
 ```
 
 
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Mediana\Sdk\Model\GetAuthorizedUser200Response**](../Model/GetAuthorizedUser200Response.md)
+[**\Mediana\Sdk\Model\UserResponse**](../Model/UserResponse.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# Mediana-php
 
 Mediana sms api doc </br>  sdks for some programming languages is in out github at https://github.com/ippanelippanel </br> api-key format: <code>Authorization: \"AccessKey your-api-key\"</code>
 
@@ -23,11 +23,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/jalilvand/Mediana-php.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "jalilvand/Mediana-php": "*@dev"
   }
 }
 ```
@@ -40,7 +40,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/Mediana-php/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -59,18 +59,19 @@ $config = Mediana\Sdk\Configuration::getDefaultConfiguration()->setApiKey('Autho
 // $config = Mediana\Sdk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new Mediana\Sdk\Api\AuthApi(
+$apiInstance = new Mediana\Sdk\Api\MedianaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
+$pattern_to_create = new \Mediana\Sdk\Model\PatternToCreate(); // \Mediana\Sdk\Model\PatternToCreate | parameters
 
 try {
-    $result = $apiInstance->getAuthorizedUser();
+    $result = $apiInstance->createPattern($pattern_to_create);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AuthApi->getAuthorizedUser: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling MedianaApi->createPattern: ', $e->getMessage(), PHP_EOL;
 }
 
 ```
@@ -81,42 +82,44 @@ All URIs are relative to *http://rest.ippanel.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AuthApi* | [**getAuthorizedUser**](docs/Api/AuthApi.md#getauthorizeduser) | **GET** /v1/user | 
-*CreditApi* | [**getCredit**](docs/Api/CreditApi.md#getcredit) | **GET** /v1/credit | 
-*MessagesApi* | [**createPattern**](docs/Api/MessagesApi.md#createpattern) | **POST** /v1/messages/patterns | 
-*MessagesApi* | [**fetchInboxMessages**](docs/Api/MessagesApi.md#fetchinboxmessages) | **GET** /v1/messages/inbox | 
-*MessagesApi* | [**getMessageRecipientsStatus**](docs/Api/MessagesApi.md#getmessagerecipientsstatus) | **GET** /v1/messages/{bulk_id}/recipients | 
-*MessagesApi* | [**getSMS**](docs/Api/MessagesApi.md#getsms) | **GET** /v1/messages/{bulk_id} | 
-*MessagesApi* | [**sendPattern**](docs/Api/MessagesApi.md#sendpattern) | **POST** /v1/messages/patterns/send | 
-*MessagesApi* | [**sendSMS**](docs/Api/MessagesApi.md#sendsms) | **POST** /v1/messages | 
+*MedianaApi* | [**createPattern**](docs/Api/MedianaApi.md#createpattern) | **POST** /v1/messages/patterns | 
+*MedianaApi* | [**fetchInboxMessages**](docs/Api/MedianaApi.md#fetchinboxmessages) | **GET** /v1/messages/inbox | 
+*MedianaApi* | [**getAuthorizedUser**](docs/Api/MedianaApi.md#getauthorizeduser) | **GET** /v1/user | 
+*MedianaApi* | [**getCredit**](docs/Api/MedianaApi.md#getcredit) | **GET** /v1/credit | 
+*MedianaApi* | [**getMessageRecipientsStatus**](docs/Api/MedianaApi.md#getmessagerecipientsstatus) | **GET** /v1/messages/{bulk_id}/recipients | 
+*MedianaApi* | [**getSMS**](docs/Api/MedianaApi.md#getsms) | **GET** /v1/messages/{bulk_id} | 
+*MedianaApi* | [**sendPattern**](docs/Api/MedianaApi.md#sendpattern) | **POST** /v1/messages/patterns/send | 
+*MedianaApi* | [**sendSMS**](docs/Api/MedianaApi.md#sendsms) | **POST** /v1/messages | 
 
 ## Models
 
-- [CreatePattern200Response](docs/Model/CreatePattern200Response.md)
-- [CreatePattern200ResponseData](docs/Model/CreatePattern200ResponseData.md)
-- [FetchInboxMessages200Response](docs/Model/FetchInboxMessages200Response.md)
-- [FetchInboxMessages200ResponseData](docs/Model/FetchInboxMessages200ResponseData.md)
-- [GetAuthorizedUser200Response](docs/Model/GetAuthorizedUser200Response.md)
-- [GetAuthorizedUser200ResponseData](docs/Model/GetAuthorizedUser200ResponseData.md)
-- [GetAuthorizedUser401Response](docs/Model/GetAuthorizedUser401Response.md)
-- [GetAuthorizedUser401ResponseData](docs/Model/GetAuthorizedUser401ResponseData.md)
-- [GetCredit200Response](docs/Model/GetCredit200Response.md)
-- [GetCredit200ResponseData](docs/Model/GetCredit200ResponseData.md)
-- [GetMessageRecipientsStatus200Response](docs/Model/GetMessageRecipientsStatus200Response.md)
-- [GetMessageRecipientsStatus200ResponseData](docs/Model/GetMessageRecipientsStatus200ResponseData.md)
-- [GetSMS200Response](docs/Model/GetSMS200Response.md)
-- [GetSMS200ResponseData](docs/Model/GetSMS200ResponseData.md)
+- [CreatePatternResponse](docs/Model/CreatePatternResponse.md)
+- [CreatePatternResponseAllOfData](docs/Model/CreatePatternResponseAllOfData.md)
+- [CreditResponse](docs/Model/CreditResponse.md)
+- [CreditResponseAllOfData](docs/Model/CreditResponseAllOfData.md)
+- [ErrorResponse](docs/Model/ErrorResponse.md)
+- [GenericResponse](docs/Model/GenericResponse.md)
 - [InboxMessage](docs/Model/InboxMessage.md)
+- [InboxResponse](docs/Model/InboxResponse.md)
+- [InboxResponseAllOfData](docs/Model/InboxResponseAllOfData.md)
 - [Message](docs/Model/Message.md)
+- [MessageResponse](docs/Model/MessageResponse.md)
+- [MessageResponseAllOfData](docs/Model/MessageResponseAllOfData.md)
 - [MessageToSend](docs/Model/MessageToSend.md)
 - [Meta](docs/Model/Meta.md)
 - [Pattern](docs/Model/Pattern.md)
 - [PatternToCreate](docs/Model/PatternToCreate.md)
 - [PatternToSend](docs/Model/PatternToSend.md)
 - [Recipient](docs/Model/Recipient.md)
-- [SendSMS200Response](docs/Model/SendSMS200Response.md)
-- [SendSMS200ResponseData](docs/Model/SendSMS200ResponseData.md)
+- [RecipientResponse](docs/Model/RecipientResponse.md)
+- [RecipientResponseAllOfData](docs/Model/RecipientResponseAllOfData.md)
+- [SmsResponse](docs/Model/SmsResponse.md)
+- [SmsResponseAllOfData](docs/Model/SmsResponseAllOfData.md)
 - [User](docs/Model/User.md)
+- [UserResponse](docs/Model/UserResponse.md)
+- [UserResponseAllOfData](docs/Model/UserResponseAllOfData.md)
+- [UserResponseData](docs/Model/UserResponseData.md)
+- [UserResponseDataData](docs/Model/UserResponseDataData.md)
 
 ## Authorization
 
@@ -146,4 +149,4 @@ vendor/bin/phpunit
 This PHP package is automatically generated by the [Mediana Team](https://mediana.ir) project:
 
 - API version: `1.0.1`
-- Build package: `org.openapitools.codegen.languages.PhpClientCodegen`
+    - Package version: `1.0.3`

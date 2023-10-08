@@ -10,7 +10,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `getCredit()`
 
 ```php
-getCredit(): \Mediana\Sdk\Model\GetCredit200Response
+getCredit(): \Mediana\Sdk\Model\CreditResponse
 ```
 
 
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Mediana\Sdk\Model\GetCredit200Response**](../Model/GetCredit200Response.md)
+[**\Mediana\Sdk\Model\CreditResponse**](../Model/CreditResponse.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

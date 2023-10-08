@@ -15,7 +15,7 @@ All URIs are relative to http://rest.ippanel.com, except if the operation define
 ## `createPattern()`
 
 ```php
-createPattern($pattern_to_create): \Mediana\Sdk\Model\CreatePattern200Response
+createPattern($pattern_to_create): \Mediana\Sdk\Model\CreatePatternResponse
 ```
 
 
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\CreatePattern200Response**](../Model/CreatePattern200Response.md)
+[**\Mediana\Sdk\Model\CreatePatternResponse**](../Model/CreatePatternResponse.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json; charset=UTF-8`
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -77,7 +77,7 @@ try {
 ## `fetchInboxMessages()`
 
 ```php
-fetchInboxMessages($page, $limit): \Mediana\Sdk\Model\FetchInboxMessages200Response
+fetchInboxMessages($page, $limit): \Mediana\Sdk\Model\InboxResponse
 ```
 
 
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\FetchInboxMessages200Response**](../Model/FetchInboxMessages200Response.md)
+[**\Mediana\Sdk\Model\InboxResponse**](../Model/InboxResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -141,7 +141,7 @@ try {
 ## `getMessageRecipientsStatus()`
 
 ```php
-getMessageRecipientsStatus($bulk_id, $page, $limit): \Mediana\Sdk\Model\GetMessageRecipientsStatus200Response
+getMessageRecipientsStatus($bulk_id, $page, $limit): \Mediana\Sdk\Model\RecipientResponse
 ```
 
 
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\GetMessageRecipientsStatus200Response**](../Model/GetMessageRecipientsStatus200Response.md)
+[**\Mediana\Sdk\Model\RecipientResponse**](../Model/RecipientResponse.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -207,7 +207,7 @@ try {
 ## `getSMS()`
 
 ```php
-getSMS($bulk_id): \Mediana\Sdk\Model\GetSMS200Response
+getSMS($bulk_id): \Mediana\Sdk\Model\MessageResponse
 ```
 
 
@@ -251,7 +251,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\GetSMS200Response**](../Model/GetSMS200Response.md)
+[**\Mediana\Sdk\Model\MessageResponse**](../Model/MessageResponse.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -269,7 +269,7 @@ try {
 ## `sendPattern()`
 
 ```php
-sendPattern($pattern_to_send): \Mediana\Sdk\Model\SendSMS200Response
+sendPattern($pattern_to_send): \Mediana\Sdk\Model\SmsResponse
 ```
 
 
@@ -313,7 +313,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\SendSMS200Response**](../Model/SendSMS200Response.md)
+[**\Mediana\Sdk\Model\SmsResponse**](../Model/SmsResponse.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json; charset=UTF-8`
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -331,7 +331,7 @@ try {
 ## `sendSMS()`
 
 ```php
-sendSMS($message_to_send): \Mediana\Sdk\Model\SendSMS200Response
+sendSMS($message_to_send): \Mediana\Sdk\Model\SmsResponse
 ```
 
 
@@ -375,7 +375,7 @@ try {
 
 ### Return type
 
-[**\Mediana\Sdk\Model\SendSMS200Response**](../Model/SendSMS200Response.md)
+[**\Mediana\Sdk\Model\SmsResponse**](../Model/SmsResponse.md)
 
 ### Authorization
 
@@ -384,7 +384,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json; charset=UTF-8`
-- **Accept**: `application/json; charset=UTF-8`
+- **Accept**: `application/json; charset=UTF-8`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
