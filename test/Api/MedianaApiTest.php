@@ -72,12 +72,96 @@ class MedianaApiTest extends TestCase
     }
 
     /**
+     * Test case for createPattern
+     *
+     * .
+     *
+     */
+    public function testCreatePattern()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for fetchInboxMessages
+     *
+     * .
+     *
+     */
+    public function testFetchInboxMessages()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test case for getAuthorizedUser
      *
      * .
      *
      */
     public function testGetAuthorizedUser()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for getCredit
+     *
+     * .
+     *
+     */
+    public function testGetCredit()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for getMessageRecipientsStatus
+     *
+     * .
+     *
+     */
+    public function testGetMessageRecipientsStatus()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for getSMS
+     *
+     * .
+     *
+     */
+    public function testGetSMS()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for sendPattern
+     *
+     * .
+     *
+     */
+    public function testSendPattern()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for sendSMS
+     *
+     * .
+     *
+     */
+    public function testSendSMS()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
