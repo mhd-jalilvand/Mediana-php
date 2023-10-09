@@ -1,6 +1,6 @@
 {
     "name": "mhd-jalilvand/mediana-php",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Mediana sms api doc </br>  sdks for some programming languages is in out github at https://github.com/ippanelippanel </br> api-key format: <code>Authorization: \"AccessKey your-api-key\"</code>  # Authentication  <!-- ReDoc-Inject: <security-definitions> -->",
     "keywords": [
         "php",
